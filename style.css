@@ -112,6 +112,7 @@ h2 { font-size: 22px; letter-spacing: -.03em; }
 .project-summary { margin-top: 9px; max-width: 740px; }
 .project-overview { display: grid; grid-template-columns: 1.35fr 1fr; gap: 48px; align-items: start; }
 .project-image img { width: 100%; background: var(--image-background); }
+.project-image video { display: block; width: 100%; background: var(--image-background); }
 figcaption { margin-top: 10px; color: var(--muted); font-size: 12px; }
 .project-facts { padding-bottom: 16px; border-bottom: 1px solid var(--line); font-size: 13px; }
 .project-facts div, .about-facts div { display: grid; grid-template-columns: 80px 1fr; gap: 12px; }
@@ -139,6 +140,7 @@ h4 + p { margin-top: 7px; color: var(--muted); font-size: 14px; }
 .case-text p { font-size: 14px; }
 .process-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 28px; }
 .process-pair img { width: 100%; }
+.process-pair video { display: block; width: 100%; background: var(--image-background); }
 .image-slot { display: grid; place-items: center; min-height: 160px; padding: 24px; background: var(--image-background); color: var(--muted); font-size: 13px; }
 
 /* 6. 소개와 관련 자료 */
