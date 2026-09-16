@@ -27,25 +27,25 @@
     <section id="intro" class="intro" aria-labelledby="intro-title">
       <div class="intro-copy">
         <p class="eyebrow">컴퓨터공학전공 · 게임 프로그래밍</p>
-        <h1 id="intro-title">재밌는 게임을 만들고 싶은<br>꿈나무 게임 개발자</h1>
+        <h1 id="intro-title">재밌는 게임을 개발하고 싶은 꿈나무 게임 개발자</h1>
         <p class="introduction">안녕하세요 저는 게임 개발에 관심이 있는 강백호입니다. 지금은 'Avocado Survivor' 라고 하는 2D 로그라이크 게임을 개발하고 있습니다.</p>
         <a class="button" href="#projects">프로젝트 보기 <span aria-hidden="true">↓</span></a>
       </div>
       <div class="featured-preview">
         <div class="preview-heading"><span>대표 프로젝트</span><span aria-hidden="true">01</span></div>
         <button class="image-trigger" type="button" data-image-viewer aria-label="대표 프로젝트 이미지 크게 보기" aria-haspopup="dialog">
-          <img src="assets/avocado.png" alt="본인 프로젝트의 화면이나 결과 이미지를 넣을 자리" width="960" height="720">
+          <img src="assets/avocado_main_screen.png" alt="본인 프로젝트의 화면이나 결과 이미지를 넣을 자리" width="960" height="720">
         </button>
         <a class="preview-caption" href="#project-1">
           <strong>Avocado Survivor</strong>
-          <span>뱀서류 2D 게임 개발</span>
+          <span>뱀서류 2D 게임</span>
         </a>
       </div>
     </section>
 
     <section id="projects" class="projects" aria-labelledby="projects-title">
       <div class="section-heading">
-        <h2 id="projects-title">프로젝트</h2>
+        <h2 id="projects-title">프로젝트 소개</h2>
       </div>
       <article id="project-1" class="project" aria-labelledby="project-1-title">
         <header class="project-header">
@@ -59,11 +59,10 @@
 
         <div class="project-overview">
           <figure class="project-image">
-            <button class="image-trigger" type="button" data-image-viewer aria-label="프로젝트 이미지 크게 보기" aria-haspopup="dialog">
-              <img src="assets/avocado_play.png"
-                   alt="본인 프로젝트의 화면이나 결과 이미지를 넣을 자리"
-                   width="960" height="720">
-            </button>
+            <video controls preload="metadata" aria-label="JustDance 카피게임 시연 영상">
+              <source src="assets/avocado_play.mp4" type="video/mp4">
+              동영상을 재생할 수 없는 브라우저입니다.
+            </video>
             <figcaption>게임 플레이 영상</figcaption>
           </figure>
           <div class="project-description">
@@ -110,6 +109,10 @@
                 <div class="image-slot"><img src="assets/avocado_localization.png"></div>
                 <figcaption>지역별 언어 지원 구글 스프레드 시트 화면</figcaption>
               </figure>
+              <figure>
+                <video controls preload="metadata" aria-label="모션인식 테스트"><source src="assets/avocado_play2.mp4" type="video/mp4"></video>
+                <figcaption>게임 플레이 영상 2</figcaption>
+              </figure>
             </div>
           </div>
         </details>
@@ -120,7 +123,7 @@
           <div>
             <p class="eyebrow">팀 프로젝트</p>
             <h3 id="project-2-title">JustDance 카피게임</h3>
-            <p class="project-summary">JustDance의 카피게임입니다. 플레이어는 신나는 노래에 맞춰 화면에 보이는 아바타의 동작에 따라 신나게 춤을 춥니다. Kinect V2 카메라를 사용하여 아바타의 춤을 촬영했고 iPi Soft 소프트웨어 통해 춤 영상을 3D 애니메이션으로 변환했습니다.</p>
+            <p class="project-summary">JustDance의 카피게임입니다. 플레이어는 신나는 노래에 맞춰 화면에 보이는 아바타의 동작에 따라 신나게 춤을 추는 게임입니다.</p>
           </div>
         </header>
         <div class="project-overview">
@@ -139,9 +142,11 @@
             <h4>내가 맡은 일</h4>
             <ul class="contributions"><li>플레이어 모션 정확도 판단 시스템 개발 / 춤 촬영 및 3D 애니메이션 제작</li></ul>
             <h4>완성도</h4>
-            <p>게임의 전반적인 기능을 모두 구현했습니다. 아바타의 춤에 대한 플레이어의 반응이 얼마나 유사한지를 실시간으로 측정하여 점수를 얻을 수 있고 순위를 매겨 더 높은 점수를 얻기 위해 경쟁할 수 있습니다. 다만 노래를 하나밖에 만들지 못해 이는 아쉬움으로 남아 있습니다. 새로운 컨텐츠를 만들 기반이 완성되어 있기때문에 기회가 된다면 다양한 곡을 만들어보고 싶습니다.</p>
+            <p>게임의 전반적인 기능을 모두 구현했습니다. 아바타의 춤에 대한 플레이어의 반응이 얼마나 유사한지를 실시간으로 측정하여 점수를 얻을 수 있고 순위를 매겨 더 높은 점수를 얻기 위해 경쟁할 수 있습니다.</p>
             <ul class="tool-list" aria-label="이 작품에 사용한 도구"><li>Unity 게임 엔진</li><li>iPi Soft 모션 캡처 프로그램</li></ul>
-            <div class="project-links"></div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/noojam/game-justdance-copygame">깃허브 레포 ↗</a>
+            </div>
           </div>
         </div>
         <details class="case-study">
@@ -163,7 +168,7 @@
       </article>
 
       <article id="project-3" class="project" aria-labelledby="project-3-title">
-        <header class="project-header"><p class="project-number" aria-hidden="true">03</p><div><p class="eyebrow">팀 프로젝트</p><h3 id="project-3-title">VR 게임 프로젝트</h3><p class="project-summary">플레이어를 공격하는 로봇들로 넘쳐나는 연구소에서 탈출하는 게임! VR 컨트롤러로 다양한 오브젝트와 상호작용 할 수 있으며, 그래플링 건과 같은 아이템을 사용하여 속도감을 느낄 수 있는 게임!</p></div></header>
+        <header class="project-header"><p class="project-number" aria-hidden="true">03</p><div><p class="eyebrow">팀 프로젝트</p><h3 id="project-3-title">VR 게임 프로젝트</h3><p class="project-summary">플레이어를 공격하는 로봇들로 넘쳐나는 연구소에서 탈출하는 게임! VR 컨트롤러로 다양한 오브젝트와 상호작용 할 수 있으며, 그래플링 건과 같은 아이템을 사용하여 속도감을 느낄 수 있는 게임입니다.</p></div></header>
         <div class="project-overview"><figure class="project-image"><video controls preload="metadata" aria-label="프로젝트 3 시연 영상"><source src="assets/vrtest.mp4" type="video/mp4">동영상을 재생할 수 없는 브라우저입니다.</video><figcaption>프로젝트 3 시연 영상</figcaption></figure><div class="project-description"><dl class="project-facts"><div><dt>진행 기간</dt><dd>2022.04 ~ 2022.11</dd></div><div><dt>참여 형태</dt><dd>고등학교 1학년 동아리 활동</dd></div></dl><h4>내가 맡은 일</h4><ul class="contributions"><li>게임 프로그래밍 / 3D 모델링</li></ul><h4>완성도</h4><p>프로젝트를 함께 진행한 친구와 호기롭게 VR 게임을 만들자는 계획을 세웠지만 게임을 완성하지 못했습니다.</p><ul class="tool-list" aria-label="이 작품에 사용한 도구"><li>Unity 게임 엔진</li><li>Blender 3D 모델링 툴</li></ul><div class="project-links"></div></div></div>
         <details class="case-study"><summary>만든 과정과 해결한 문제</summary><div class="case-content"><div class="case-text"><section aria-labelledby="project-3-goal"><h4 id="project-3-goal">무엇을 만들려고 했나</h4><p>주어진 코스를 자동으로 이동하고 플레이어는 주위에서 공격하는 로봇들을 향해 총을 쏘아 맞힙니다. 그래플링 건, 클라이밍, 서랍, 공과 같은 상호작용 가능한 오브젝트들이 있습니다. 공상 과학적 미래 배경에서 로봇들의 공격으로부터 살아남고 게임 오브젝트와 상호작용하는 재미를 느낄 수 있는 게임을 개발하고자 했습니다.</p></section><section aria-labelledby="project-3-problem"><h4 id="project-3-problem">어디에서 막혔나</h4><p>게임에 어떤 컨텐츠를 넣을지에 치중되어 개발 관련 계획을 꼼꼼하게 세우지 못한채로 프로젝트를 진행하였고 사소한 디테일을 추가하느라 핵심 기능 개발에 소홀히 하면서 게임의 핵심 기능 개발을 진행하지 못했습니다.</p></section><section aria-labelledby="project-3-result"><h4 id="project-3-result">무엇을 배웠나</h4><p>주어진 시간/물질/인적 자원을 고려하여 현실적으로 가능한 목표를 세우고 핵심 기능을 우선적으로 개발한 뒤 디테일을 채우는 것의 중요성을 배우는 계기가 되었습니다. 1학년 프로젝트의 실패를 통해 2학년 프로젝트는 더 꼼꼼하게 계획을 세우고, 핵심 기능을 우선적으로 개발하여 성공적으로 마무리할 수 있었습니다.</p></section></div>
           <div class="process-pair">
@@ -175,15 +180,19 @@
       </article>
 
       <article id="project-4" class="project" aria-labelledby="project-4-title">
-        <header class="project-header"><p class="project-number" aria-hidden="true">04</p><div><p class="eyebrow">[수업 과제 / 개인 프로젝트 / 팀 프로젝트]</p><h3 id="project-4-title">[프로젝트 4 이름]</h3><p class="project-summary">[무엇을 만들었고, 어떤 것을 할 수 있는지 두 문장 이내로 설명합니다.]</p></div></header>
-        <div class="project-overview"><figure class="project-image"><video controls preload="metadata" aria-label="프로젝트 4 시연 영상"></video><figcaption>프로젝트 4 시연 영상</figcaption></figure><div class="project-description"><dl class="project-facts"><div><dt>진행 기간</dt><dd>[진행 기간]</dd></div><div><dt>참여 형태</dt><dd>[개인 / 팀 인원과 본인 역할]</dd></div></dl><h4>내가 맡은 일</h4><ul class="contributions"><li>[직접 구현하거나 구성한 작업]</li><li>[직접 해결하거나 개선한 부분]</li></ul><h4>확인할 수 있는 결과</h4><p>[완성한 기능이나 표현을 설명합니다.]</p><ul class="tool-list" aria-label="이 작품에 사용한 도구"><li>[사용 도구 1]</li><li>[사용 도구 2]</li></ul><div class="project-links"></div></div></div>
-        <details class="case-study"><summary>만든 과정과 해결한 문제</summary><div class="case-content"><div class="case-text"><section aria-labelledby="project-4-goal"><h4 id="project-4-goal">무엇을 만들려고 했나</h4><p>[작업 목표와 조건, 처음에 정한 범위를 적습니다.]</p></section><section aria-labelledby="project-4-problem"><h4 id="project-4-problem">어디에서 막혔고, 어떻게 풀었나</h4><p>[겪은 문제와 해결 방법을 적습니다.]</p></section><section aria-labelledby="project-4-result"><h4 id="project-4-result">무엇을 배웠나</h4><p>[수정 후 확인 방법과 결과를 적습니다.]</p></section></div><div class="process-pair"><figure><div class="image-slot">수정 전 화면</div><figcaption>[어떤 문제가 보였는지]</figcaption></figure><figure><div class="image-slot">수정 후 화면</div><figcaption>[어디를 어떻게 바꿨는지]</figcaption></figure></div></div></details>
+        <header class="project-header"><p class="project-number" aria-hidden="true">04</p><div><p class="eyebrow">인터넷과 웹기초 텀 프로젝트</p><h3 id="project-4-title">게임 정보 Api를 활용한 게임 정보 제공 웹사이트</h3><p class="project-summary">Rawg Api와 Youtube Api를 사용해서 게임 정보와 그 게임과 관련성이 가장 높은 유튜브 영상 4개를 팝업창에서 확인할 수 있습니다. 게임 정보 뿐만 아니라 게임을 평가하는 척도인 메타스코어가 높은 순서로 정렬하여 게임들을 확인할 수 있고 올해의 게임(Goty) 수상작 게임을 확인할 수도 있습니다.</p></div></header>
+        <div class="project-overview"><figure class="project-image"><video controls preload="metadata" aria-label="프로젝트 4 시연 영상"><source src="assets/inwebgi.mp4" type="video/mp4">동영상을 재생할 수 없는 브라우저입니다.</video></video><figcaption>프로젝트 4 시연 영상</figcaption></figure><div class="project-description"><dl class="project-facts"><div><dt>진행 기간</dt><dd>2025.06 ~ 2025.07</dd></div><div><dt>참여 형태</dt><dd>개인</dd></div></dl><h4>내가 맡은 일</h4><ul class="contributions"><li> </li><li>[직접 해결하거나 개선한 부분]</li></ul><h4>완성도</h4><p>핵심 기능은 정상적으로 작동하지만, Api에 정확하지 않은 정보가 많고 검색 기능이 유연하게 작동하지 않습니다. 현재 Youtube Api가 해지된 상태라 관련 유튜브 영상을 제공하는 기능이 작동하지 않습니다.</p><ul class="tool-list" aria-label="이 작품에 사용한 도구"><li>Rawg Api</li><li>Youtube Api</li></ul><div class="project-links">
+              <a class="text-link" href="https://github.com/noojam/pnu-internet-webbasis-termproject">깃허브 레포 ↗</a>
+            </div></div></div>
+        <details class="case-study"><summary>만든 과정과 해결한 문제</summary><div class="case-content"><div class="case-text"><section aria-labelledby="project-4-goal"><h4 id="project-4-goal">무엇을 만들려고 했나</h4><p>Api를 활용해서 웹 페이지를 만드는 것이 텀 프로젝트의 목표였습니다.</p></section><section aria-labelledby="project-4-problem"><h4 id="project-4-problem">어디에서 막혔고, 어떻게 풀었나</h4><p>많은 정보가 축적되어 있는 Api를 활용해서 정보를 제공해야하는데 어떤 정보를 제공할지 고민이 많았습니다. 제가 관심이 있고 잘 아는 정보를 제공하는 것이 좋겠다 생각해서 게임 정보를 제공하기로 했습니다.</p></section><section aria-labelledby="project-4-result"><h4 id="project-4-result">무엇을 배웠나</h4><p>Api 데이터를 사용자 목적에 맞게 가공하여 단순 호출을 넘어 의미 있는 정보로 변환하는 방법을 배웠습니다.</p></section></div></div></details>
       </article>
 
       <article id="project-5" class="project" aria-labelledby="project-5-title">
         <header class="project-header"><p class="project-number" aria-hidden="true">05</p><div><p class="eyebrow">개인 스터디 프로젝트</p><h3 id="project-5-title">언리얼5 스터디 프로젝트</h3><p class="project-summary">언리얼5 게임엔진 스터디 목적으로 진행 중인 프로젝트 입니다. 프로젝트를 통해 언리얼5의 기능과 사용법을 익히고 실제 게임 개발에 적용할 수 있는 능력을 기르고자 합니다.</p></div></header>
-        <div class="project-overview"><figure class="project-image"><video controls preload="metadata" aria-label="프로젝트 5 시연 영상"><source src="assets/uestudy.mp4" type="video/mp4">동영상을 재생할 수 없는 브라우저입니다.</video></video><figcaption>프로젝트 5 시연 영상</figcaption></figure><div class="project-description"><dl class="project-facts"><div><dt>진행 기간</dt><dd>2026.05 ~ 진행 중</dd></div><div><dt>참여 형태</dt><dd>개인 스터디 프로젝트</dd></div></dl><h4>진행 상황</h4><ul class="contributions"><li>기본 3인칭 슈터 카메라 시스템 구현</li><li>언리얼5의 Component 기반 프로그래밍</li><li>비주얼 스크립팅 도구인 Blueprint로 프리팹 제작</li><li>게임에 깊이감과 비주얼 감각을 더해주는 Post Processing, Shader 제작</li></ul><h4>완성도</h4><p>2026년 1학기에 시작하여 스터디를 목적으로 진행된 프로젝트여서 게임의 컨텐츠와 완성도는 크게 생각하지 않은 상태로 진행중입니다. 아직 완성도라고 할만한 의미있는 결과가 없는 상태입니다. </p><ul class="tool-list" aria-label="이 작품에 사용한 도구"><li>Unreal 5 게임엔진</li><li>Codex</li></ul><div class="project-links"></div></div></div>
-        <details class="case-study"><summary>만든 과정과 해결한 문제</summary><div class="case-content"><div class="case-text"><section aria-labelledby="project-5-goal"><h4 id="project-5-goal">무엇을 만들려고 했나</h4><p>여태 사용해본 게임 엔진이 Unity 밖에 없다보니 Unreal 5의 기능을 배워보려 했습니다. 키 입력, 이동, 카메라 제어, 애니메이션, 텍스쳐, 물리 시뮬레이션 등 게임 개발에 있어 필수적인 요소들을 배우고 적용해보는 프로젝트를 진행하고자 했습니다.</p></section><section aria-labelledby="project-5-problem"><h4 id="project-5-problem">어디에서 막혔고, 어떻게 풀었나</h4><p>[겪은 문제와 해결 방법을 적습니다.]</p></section><section aria-labelledby="project-5-result"><h4 id="project-5-result">무엇을 배웠나</h4><p>[수정 후 확인 방법과 결과를 적습니다.]</p></section></div></div></details>
+        <div class="project-overview"><figure class="project-image"><video controls preload="metadata" aria-label="프로젝트 5 시연 영상"><source src="assets/uestudy.mp4" type="video/mp4">동영상을 재생할 수 없는 브라우저입니다.</video></video><figcaption>프로젝트 5 시연 영상</figcaption></figure><div class="project-description"><dl class="project-facts"><div><dt>진행 기간</dt><dd>2026.05 ~ 진행 중</dd></div><div><dt>참여 형태</dt><dd>개인 스터디 프로젝트</dd></div></dl><h4>진행 상황</h4><ul class="contributions"><li>기본 3인칭 슈터 카메라 시스템 구현</li><li>언리얼5의 Component 기반 프로그래밍</li><li>비주얼 스크립팅 도구인 Blueprint로 프리팹 제작</li><li>게임에 깊이감과 미감을 더해주는 Post Processing, Shader 제작</li></ul><h4>완성도</h4><p>2026년 1학기에 시작하여 스터디를 목적으로 진행된 프로젝트여서 게임의 컨텐츠와 완성도는 크게 생각하지 않은 상태로 진행중입니다. 아직 완성도라고 할만한 의미있는 결과가 없는 상태입니다. </p><ul class="tool-list" aria-label="이 작품에 사용한 도구"><li>Unreal 5 게임엔진</li><li>Codex</li></ul><div class="project-links">
+              <a class="text-link" href="https://github.com/noojam/ue5-first-study">깃허브 레포 ↗</a>
+            </div></div></div>
+        <details class="case-study"><summary>만든 과정과 해결한 문제</summary><div class="case-content"><div class="case-text"><section aria-labelledby="project-5-goal"><h4 id="project-5-goal">무엇을 만들려고 했나</h4><p>여태 사용해본 게임 엔진이 Unity 밖에 없다보니 Unreal 5의 기능을 배워보려 했습니다. 키 입력, 이동, 카메라 제어, 애니메이션, 텍스쳐, 물리 시뮬레이션 등 게임 개발에 있어 필수적인 요소들을 배우고 적용해보는 프로젝트를 진행하고자 했습니다.</p></section><section aria-labelledby="project-5-problem"><h4 id="project-5-problem">어디에서 막혔고, 어떻게 풀었나</h4><p>Unity 게임 엔진에 비해 유지 보수적 친화적인 대신, 언리얼5 엔진 자체에서 제공하는 기능을 사용하는 것이 암묵적으로 강제되어있다는 느낌을 받았습니다. 미리 만들어져있는 기능이 워낙 많다보니 개발에 필요한 기능을 찾고 배우는 과정에 막막함을 느꼈습니다. 관련 공식 문서와 튜토리얼 강좌, Ai를 활용해서 일단 뭐라도 만들어보는 것에 집중하고 있습니다.</p></section><section aria-labelledby="project-5-result"><h4 id="project-5-result">무엇을 배웠나</h4><p>새로운 분야에 처음 입문할때를 돌아보면 완벽하게 준비해서 시작하기보다는 일단 시작하면서 익숙해지는 과정이 필요하다는 것을 배울 수 있었습니다.</p></section></div></div></details>
       </article>
     </section>
 
