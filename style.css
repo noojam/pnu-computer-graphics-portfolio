@@ -1,6 +1,7 @@
 /* 1. 테마: 이 값들을 바꾸면 페이지 전체에 적용됩니다. */
 :root {
-  --page: #ffffff;
+  --page: #e3e5e6;
+  --project-surface: #eff0f0;
   --ink: #242724;
   --muted: #636963;
   --accent: #2d5545;
@@ -54,10 +55,33 @@ h1, h2, h3, h4 { line-height: 1.5; }
 }
 .site-name { display: inline-flex; align-items: baseline; gap: 14px; font-weight: 700; text-decoration: none; }
 .site-label { color: var(--muted); font-size: 12px; font-weight: 400; }
-.site-header nav { display: flex; flex-wrap: wrap; gap: 4px 28px; font-size: 13px; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
 .site-header a { min-height: 44px; display: inline-flex; align-items: center; }
-.site-header nav a { text-decoration: none; }
-.site-header nav a:hover { text-decoration: underline; }
+.site-header nav a {
+  --nav-color: #7f7f7f;
+  --nav-background: #f5f5f5;
+  justify-content: center;
+  padding: 6px 12px;
+  border: 1px solid var(--nav-color);
+  border-bottom-width: 3px;
+  border-radius: 10px;
+  background: var(--nav-background);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color .15s ease, box-shadow .15s ease;
+}
+.site-header nav a[href="#project-1"] { --nav-color: #1f77b4; --nav-background: #edf4f9; }
+.site-header nav a[href="#project-2"] { --nav-color: #ff7f0e; --nav-background: #fff5ec; }
+.site-header nav a[href="#project-3"] { --nav-color: #9467bd; --nav-background: #f6f3fa; }
+.site-header nav a[href="#project-4"] { --nav-color: #17becf; --nav-background: #ecfafb; }
+.site-header nav a[href="#project-5"] { --nav-color: #7f7f7f; --nav-background: #f5f5f5; }
+.site-header nav a:hover {
+  background: color-mix(in srgb, var(--nav-color) 18%, var(--project-surface));
+  box-shadow: 0 2px 5px #24272418;
+}
+.site-header nav a:focus-visible { outline-color: var(--ink); }
+.site-header nav a:active { box-shadow: inset 0 2px 4px #24272420; }
 .intro {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
@@ -105,9 +129,10 @@ h1 { margin-top: 16px; font-size: clamp(32px, 3.5vw, 44px); letter-spacing: -.04
 h2 { font-size: 22px; letter-spacing: -.03em; }
 .section-heading p { color: var(--muted); font-size: 12px; }
 .project {
-  --project-accent: #5f8f82;
-  --project-tint: #eef6f3;
+  --project-accent: #1f77b4;
+  --project-tint: #edf4f9;
   position: relative;
+  padding-top: 16px;
   padding-bottom: 44px;
   padding-inline-start: 20px;
   border-bottom: 1px solid var(--line);
@@ -116,7 +141,7 @@ h2 { font-size: 22px; letter-spacing: -.03em; }
     transparent 0,
     var(--project-tint) -90px,
     transparent 42%
-  );
+  ), var(--project-surface);
 }
 .project::before {
   position: absolute;
@@ -126,15 +151,16 @@ h2 { font-size: 22px; letter-spacing: -.03em; }
   background: var(--project-accent);
   content: "";
 }
-/* WCAG AA 명암비(5.8:1 ~ 7.1:1) 및 색각 이상 인지 개선 팔레트 */
-.project:nth-of-type(1) { --project-accent: #5f8f82; --project-tint: #eef6f3; } /* 소프트 틸 (Soft Teal) */
-.project:nth-of-type(2) { --project-accent: #964b2a; --project-tint: #fdf5ef; } /* 테라코타 (Warm Rust) */
-.project:nth-of-type(3) { --project-accent: #2b5880; --project-tint: #f0f4f8; } /* 슬레이트 블루 (Deep Blue) */
-.project:nth-of-type(4) { --project-accent: #2c644e; --project-tint: #eff6f2; } /* 세이지 그린 (Forest Teal) */
-.project:nth-of-type(5) { --project-accent: #7f3764; --project-tint: #faf0f5; } /* 딥 베리/플럼 (Mulberry) */
-.project + .project { padding-top: 120px; }
+/* tab10 범주형 색 중 빨강/초록 조합을 제외. 번호와 제목으로도 구분합니다.
+   배경은 각 색을 흰색과 약 8% 혼합하고, 텍스트에는 진한 공통 색을 사용합니다. */
+.project:nth-of-type(1) { --project-accent: #1f77b4; --project-tint: #edf4f9; } /* 파랑 */
+.project:nth-of-type(2) { --project-accent: #ff7f0e; --project-tint: #fff5ec; } /* 주황 */
+.project:nth-of-type(3) { --project-accent: #9467bd; --project-tint: #f6f3fa; } /* 보라 */
+.project:nth-of-type(4) { --project-accent: #17becf; --project-tint: #ecfafb; } /* 청록 */
+.project:nth-of-type(5) { --project-accent: #7f7f7f; --project-tint: #f5f5f5; } /* 회색 */
+.project + .project { margin-top: 120px; }
 .project-header { display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: start; margin-bottom: 26px; }
-.project-number { padding-top: 4px; color: var(--project-accent); font-size: 14px; font-variant-numeric: tabular-nums; }
+.project-number { padding-top: 4px; color: var(--ink); font-size: 14px; font-variant-numeric: tabular-nums; }
 .project h3 { margin-top: 5px; font-size: 28px; letter-spacing: -.03em; }
 .project-summary { margin-top: 9px; max-width: 740px; }
 .project-overview { display: grid; grid-template-columns: 1.35fr 1fr; gap: 48px; align-items: start; }
@@ -154,8 +180,8 @@ h4 + p { margin-top: 7px; color: var(--muted); font-size: 14px; }
 .tool-list li + li::before { content: "/"; padding-inline: 10px; color: var(--muted); }
 .project-links { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 6px; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding-block: 6px; color: var(--accent); font-size: 16px; }
-.project .text-link { color: var(--project-accent); }
-.project .text-link:hover { color: var(--project-accent); }
+.project .text-link { color: var(--ink); }
+.project .text-link:hover { color: var(--ink); }
 .text-link:hover { text-decoration-thickness: 2px; }
 
 /* 5. 제목을 누르면 제작 기록이 열립니다. 키보드로도 조작할 수 있습니다. */
@@ -214,7 +240,7 @@ h4 + p { margin-top: 7px; color: var(--muted); font-size: 14px; }
 @media (max-width: 760px) {
   .container { width: calc(100% - 40px); }
   .site-header { flex-wrap: wrap; gap: 0 20px; padding-block: 14px 10px; }
-  .site-header nav { gap: 4px 22px; }
+  .site-header nav { gap: 8px; }
   .intro { grid-template-columns: 1fr; gap: 30px; padding-block: 34px 40px; }
   .intro-copy { max-width: 480px; }
   h1 { font-size: 34px; }
@@ -224,7 +250,7 @@ h4 + p { margin-top: 7px; color: var(--muted); font-size: 14px; }
   .preview-caption strong { font-size: 18px; }
   .section-heading { flex-wrap: wrap; gap: 4px; padding-block: 22px 28px; }
   .project-header { grid-template-columns: 28px 1fr; gap: 12px; margin-bottom: 22px; }
-  .project + .project { padding-top: 80px; }
+  .project + .project { margin-top: 80px; }
   .project { padding-inline-start: 14px; }
   .project h3 { font-size: 24px; }
   .project-overview { grid-template-columns: 1fr; gap: 28px; }
